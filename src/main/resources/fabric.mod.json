@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblejourney",
+  "version": "${version}",
+  "name": "CobbleJourney",
+  "description": "This mod auto-hides the JourneyMap Minimap when in Cobblemon Battle!",
+  "authors": [
+    "Elyygee"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": ""
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/cobblejourney/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.cobblejourney.CobbleJourney"  
+    ],
+    "client": [
+      "com.cobblejourney.CobbleJourneyClient" 
+    ]
+  },
+  "mixins": [
+    "cobblejourney.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": ">=0.115.0+1.21.1"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
